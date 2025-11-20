@@ -1,3 +1,7 @@
+#vscode
+build/
+.vscode/
+
 # C++ objects and libs
 
 *.slo
@@ -33,5 +37,6 @@ Makefile*
 *.qmlproject.user
 *.qmlproject.user.*
 
+src/driver/PeakCanDriver/api
 
 test.dbc

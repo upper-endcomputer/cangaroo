@@ -5,7 +5,9 @@
 #include <core/MeasurementInterface.h>
 #include "api/candle.h"
 #include "CandleApiTiming.h"
+#ifdef _WIN32
 #include <windows.h>
+#endif
 #include <QList>
 
 class CandleApiDriver;

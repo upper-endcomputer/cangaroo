@@ -1,0 +1,71 @@
+# .clang-format for Cangaroo project
+# Matches existing code style: 4-space indent, Allman braces, etc.
+---
+Language: Cpp
+Standard: c++11
+
+# Base style
+BasedOnStyle: Google
+
+# Indentation
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ContinuationIndentWidth: 4
+AccessModifierOffset: -4
+NamespaceIndentation: None
+
+# Braces: Allman style (opening brace on new line)
+BreakBeforeBraces: Allman
+
+# Line length - observed in existing code
+ColumnLimit: 120
+
+# Pointer/reference alignment: Type* name (left-aligned)
+PointerAlignment: Left
+DerivePointerAlignment: false
+
+# Function declarations
+AllowShortFunctionsOnASingleLine: Empty
+AlwaysBreakAfterReturnType: None
+AlwaysBreakAfterDefinitionReturnType: None
+
+# Control statements
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+
+# Spacing
+SpaceBeforeParens: ControlStatements
+SpaceAfterCStyleCast: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpaceBeforeAssignmentOperators: true
+
+# Alignment
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignAfterOpenBracket: Align
+AlignOperands: true
+
+# Constructor initializer lists: match "MainWindow::MainWindow() :"
+BreakConstructorInitializers: BeforeColon
+ConstructorInitializerIndentWidth: 4
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+
+# Include blocks: preserve existing order (Qt includes, then project includes)
+SortIncludes: false
+IncludeBlocks: Preserve
+
+# Penalties (fine-tuning)
+PenaltyBreakBeforeFirstCallParameter: 19
+PenaltyBreakComment: 300
+PenaltyBreakString: 1000
+PenaltyExcessCharacter: 1000000
+
+# Comments
+ReflowComments: true
+CommentPragmas: "^ NOLINT"
+
+# Other
+DeriveLineEnding: false
+UseCRLF: false
